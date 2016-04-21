@@ -1,0 +1,51 @@
+.flex-container {
+  position: relative; top:0;left:0;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-around;
+}
+.main-container {
+  position: relative;
+}
+.asset {
+  display: none;
+}
+.layered-context {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 2vw solid darkslategray;
+}
+.ice-backing {
+  background: url("../images/ice_tile.png");
+  background-repeat: repeat;
+  position: absolute;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;;
+  align-items: stretch;
+  font-size: 3vh;
+  padding: 1vh;
+}
+.menu-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.menu-items > strong {
+  text-align: center;
+}
+
+@media (orientation: landscape) {
+  .layered-context {
+    border: 2vh solid darkslategray;
+  }
+  .menu {
+    flex-direction: row;
+  }
+}
