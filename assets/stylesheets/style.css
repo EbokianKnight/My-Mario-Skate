@@ -1,0 +1,84 @@
+.flex-container {
+  position: relative; top:0;left:0;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-around;
+}
+.main-container {
+  position: relative;
+}
+.asset {
+  display: none;
+}
+.layered-context {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 2vw solid darkslategray;
+}
+.ice-backing {
+  background: url("../images/ice_tile.png");
+  background-repeat: repeat;
+  position: absolute;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;;
+  align-items: stretch;
+  font-size: 3vh;
+  padding: 1vh;
+}
+.menu-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.menu-items > strong {
+  text-align: center;
+}
+.new-game-modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}
+.game-logo {
+  background: url("../images/MarioLogo.svg");
+  background: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 40vw;
+  height: 20vh;
+}
+.game-rules {
+
+}
+.game-button {
+  background: url("../images/MarioPlay.svg");
+  background: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 20vw;
+  height: 20vh;
+  cursor: pointer;
+}
+
+@media (orientation: landscape) {
+  .layered-context {
+    border: 2vh solid darkslategray;
+  }
+  .menu {
+    flex-direction: row;
+  }
+}
