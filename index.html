@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MarioIceGame</title>
+    <script type="text/javascript" src="lib/bundle.js"></script>
+  </head>
+  <body>
+    <style>
+      .main-container {}
+      .ice-backing {
+        background: url("./assets/images/ice_tile.png");
+        background-repeat: repeat;
+      }
+      .asset {display:none;}
+      .layered-context {position:absolute; top:0; left:0; border: 2em solid darkslategray}
+    </style>
+    <img src="./assets/images/mario_frames.png" class="asset" id="mario" />
+    <img src="./assets/images/green_shell.png" class="asset" id="green" />
+    <img src="./assets/images/coin.png" class="asset" id="coin" />
+
+    <div class="main-container" id='main'>
+      <canvas class="layered-context ice-backing" id="ctx-ice"></canvas>
+      <canvas class="layered-context" id="ctx"></canvas>
+    </div>
+
+  </body>
+</html>
