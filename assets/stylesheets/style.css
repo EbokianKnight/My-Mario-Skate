@@ -82,3 +82,54 @@
     flex-direction: row;
   }
 }
+
+/* ----------- Phones ----------- */
+
+@media only screen
+  and (min-device-width: 400px)
+  and (max-device-width: 700px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+
+@media only screen
+  and (min-device-width: 400px)
+  and (max-device-width: 700px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+/* ----------- Between ----------- */
+@media screen
+  and (min-device-width: 700px)
+  and (max-device-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (orientation: portrait) {
+
+}
+
+@media screen
+  and (min-device-width: 700px)
+  and (max-device-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (orientation: landscape) {
+
+}
+/* ----------- Computers ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 2100px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (orientation: portrait) {
+
+}
+
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 2100px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (orientation: landscape) {
+
+}
