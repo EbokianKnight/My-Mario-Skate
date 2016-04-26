@@ -11,27 +11,23 @@
     <img src="./assets/images/green_shell.png" class="asset" id="green" />
     <img src="./assets/images/coin.png" class="asset" id="coin" />
     <img src="./assets/images/Mushroom.png" class="asset" id="mush" />
-
-    <div class="flex-container">
-      <div class="main-container" id='main'>
-        <canvas class="layered-context ice-backing" id="ctx-ice"></canvas>
-        <canvas class="layered-context" id="ctx"></canvas>
+    <div class="wrapper" id="wrap">
+      <div class="game-container">
+        <div class="content">
+          <div class="main-game" id='main'>
+            <canvas class="board ice-backing content" id="ctx-ice"></canvas>
+            <canvas class="board content" id="ctx"></canvas>
+          </div>
+          <div class="stats-container">
+            <div class="stat-row">
+              <canvas class="stat-item" id="score"></canvas>
+              <canvas class="stat-item" id="timer"></canvas>
+              <canvas class="stat-item" id="shroom"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
-      <menu class="menu">
-        <li class="menu-items">
-          <strong>Score</strong>
-          <canvas id="score"></canvas>
-        </li>
-        <li class="menu-items">
-          <strong>Timer</strong>
-          <canvas id="timer"></canvas>
-        </li>
-        <li class="menu-items">
-          <strong>Health</strong>
-          <canvas id="shroom"></canvas>
-        </li>
-      </div>
-    </menu>
+    </div>
 
   </body>
 </html>
