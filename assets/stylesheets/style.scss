@@ -1,0 +1,79 @@
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+@media (orientation: landscape) {
+  .game-container {
+    @include aspect-ratio(3.6, 2);
+  }
+  .main-game {
+   @include aspect-ratio(1.4375, 1);
+  }
+}
+
+@media (orientation: portrait) {
+  .game-container {
+    @include aspect-ratio(2, 3.6);
+  }
+  .main-game {
+    @include aspect-ratio(1, 1.4375);
+  }
+}
+
+body {
+  background: #97b4c5;
+}
+
+.board {
+  height: inherit;
+  width: inherit;
+}
+
+.ice-backing {
+  background: url("../images/ice_tile.png");
+  background-repeat: repeat;
+}
+
+.asset {
+  display: none;
+}
+.stats-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: space-around;
+}
+
+.stat-row {
+ padding: 0 4%;
+ margin: auto;
+ background: #59829a;
+}
+
+.stat-item {
+}
+
+.new-game-modal {
+  background: rgba(0,0,0,0.6);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}

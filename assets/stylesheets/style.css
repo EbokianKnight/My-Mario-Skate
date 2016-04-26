@@ -1,135 +1,92 @@
-.flex-container {
-  position: relative; top:0;left:0;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: space-around;
-}
-.main-container {
-  position: relative;
-}
-.asset {
-  display: none;
-}
-.layered-context {
-  position: relative;
-  top: 0;
-  left: 0;
-  border: 2vw solid darkslategray;
-}
+@media (orientation: landscape) {
+  .game-container {
+    position: relative; }
+    .game-container:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 55.55556%; }
+    .game-container > .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+
+  .main-game {
+    position: relative; }
+    .main-game:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 69.56522%; }
+    .main-game > .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; } }
+@media (orientation: portrait) {
+  .game-container {
+    position: relative; }
+    .game-container:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 180%; }
+    .game-container > .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+
+  .main-game {
+    position: relative; }
+    .main-game:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 143.75%; }
+    .main-game > .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; } }
+body {
+  background: #97b4c5; }
+
+.board {
+  height: inherit;
+  width: inherit; }
+
 .ice-backing {
   background: url("../images/ice_tile.png");
-  background-repeat: repeat;
-  position: absolute;
-}
-.menu {
+  background-repeat: repeat; }
+
+.asset {
+  display: none; }
+
+.stats-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;;
-  align-items: stretch;
-  font-size: 3vh;
-  padding: 1vh;
-}
-.menu-items {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-.menu-items > strong {
-  text-align: center;
-}
+  justify-content: flex-start;
+  align-content: space-around; }
+
+.stat-row {
+  padding: 0 4%;
+  margin: auto;
+  background: #59829a; }
+
 .new-game-modal {
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  position: absolute;
-  top: 0; left: 0;
+  background: rgba(0, 0, 0, 0.6);
   z-index: 50;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-content: space-between;
-}
-.game-logo {
-  background: url("../images/MarioLogo.svg");
-  background: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  width: 40vw;
-  height: 20vh;
-}
-.game-rules {
+  align-content: space-between; }
 
-}
-.game-button {
-  background: url("../images/MarioPlay.svg");
-  background: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  width: 20vw;
-  height: 20vh;
-  cursor: pointer;
-}
-
-@media (orientation: landscape) {
-  .layered-context {
-    border: 2vh solid darkslategray;
-  }
-  .menu {
-    flex-direction: row;
-  }
-}
-
-/* ----------- Phones ----------- */
-
-@media only screen
-  and (min-device-width: 400px)
-  and (max-device-width: 700px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-}
-
-
-@media only screen
-  and (min-device-width: 400px)
-  and (max-device-width: 700px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
-/* ----------- Between ----------- */
-@media screen
-  and (min-device-width: 700px)
-  and (max-device-width: 1200px)
-  and (-webkit-min-device-pixel-ratio: 1)
-  and (orientation: portrait) {
-
-}
-
-@media screen
-  and (min-device-width: 700px)
-  and (max-device-width: 1200px)
-  and (-webkit-min-device-pixel-ratio: 1)
-  and (orientation: landscape) {
-
-}
-/* ----------- Computers ----------- */
-@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 2100px)
-  and (-webkit-min-device-pixel-ratio: 1)
-  and (orientation: portrait) {
-
-}
-
-@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 2100px)
-  and (-webkit-min-device-pixel-ratio: 1)
-  and (orientation: landscape) {
-
-}
+/*# sourceMappingURL=style.css.map */
