@@ -37,6 +37,28 @@
   }
 }
 
+@media only screen and (max-device-width: 480px) and (orientation: landscape) {
+  .game-container {
+    @include aspect-ratio(3.6, 2);
+    max-width: none !important;
+  }
+  .main-game {
+   @include aspect-ratio(1.4375, 1);
+   max-width: none !important;
+  }
+}
+
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+  .game-container {
+    @include aspect-ratio(2, 3.6);
+    max-width: none;
+  }
+  .main-game {
+    @include aspect-ratio(1, 1.4375);
+    max-width: none;
+  }
+}
+
 body {
   background: #97b4c5;
 }
