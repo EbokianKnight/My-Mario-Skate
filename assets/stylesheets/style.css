@@ -129,9 +129,6 @@ body {
   background: url("../images/ice_tile.png");
   background-repeat: repeat; }
 
-.asset {
-  display: none; }
-
 .stats-container {
   display: flex;
   flex-direction: row;
@@ -152,5 +149,8 @@ body {
   align-items: center;
   justify-content: center;
   align-content: space-between; }
+
+.asset {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

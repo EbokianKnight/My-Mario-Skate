@@ -73,9 +73,6 @@ body {
   background-repeat: repeat;
 }
 
-.asset {
-  display: none;
-}
 .stats-container {
   display:flex;
   flex-direction: row;
@@ -90,9 +87,6 @@ body {
  background: #59829a;
 }
 
-.stat-item {
-}
-
 .new-game-modal {
   background: rgba(0,0,0,0.6);
   z-index: 50;
@@ -101,4 +95,7 @@ body {
   align-items: center;
   justify-content: center;
   align-content: space-between;
+}
+.asset {
+  display: none;
 }
