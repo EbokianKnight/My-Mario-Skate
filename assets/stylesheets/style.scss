@@ -15,10 +15,10 @@
   }
 }
 
-
 @media (orientation: landscape) {
   .game-container {
     @include aspect-ratio(3.6, 2);
+    max-width: 900px;
   }
   .main-game {
    @include aspect-ratio(1.4375, 1);
@@ -26,6 +26,24 @@
 }
 
 @media (orientation: portrait) {
+  .game-container {
+    @include aspect-ratio(2, 3.6);
+    max-width: 450px;
+  }
+  .main-game {
+    @include aspect-ratio(1, 1.4375);
+  }
+}
+
+@media only screen and (max-device-width: 480px) and (orientation: landscape) {
+  .game-container {
+    @include aspect-ratio(3.6, 2);
+  }
+  .main-game {
+   @include aspect-ratio(1.4375, 1);
+  }
+}
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
   .game-container {
     @include aspect-ratio(2, 3.6);
   }

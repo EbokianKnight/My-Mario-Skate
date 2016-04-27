@@ -1,6 +1,7 @@
 @media (orientation: landscape) {
   .game-container {
-    position: relative; }
+    position: relative;
+    max-width: 900px; }
     .game-container:before {
       display: block;
       content: "";
@@ -27,6 +28,63 @@
       right: 0;
       bottom: 0; } }
 @media (orientation: portrait) {
+  .game-container {
+    position: relative;
+    max-width: 450px; }
+    .game-container:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 180%; }
+    .game-container > .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+
+  .main-game {
+    position: relative; }
+    .main-game:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 143.75%; }
+    .main-game > .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; } }
+@media only screen and (max-device-width: 480px) and (orientation: landscape) {
+  .game-container {
+    position: relative; }
+    .game-container:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 55.55556%; }
+    .game-container > .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+
+  .main-game {
+    position: relative; }
+    .main-game:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 69.56522%; }
+    .main-game > .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; } }
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
   .game-container {
     position: relative; }
     .game-container:before {
